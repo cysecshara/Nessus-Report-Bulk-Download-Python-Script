@@ -4,7 +4,7 @@ import urllib3
  
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
  
-# 🔴 REPLACE THESE 3 VALUES ONLY
+# REPLACE THESE 3 VALUES ONLY
 access_key = "57b72af4ce6affb42782bf6682e41978b8650cbb57a8097ebf2d3e2631236482"
 secret_key = "3220bec1912561264ae1ef6cc6bbb52d7906de2e51e32ed8962f498bd91a6b42"
 base_url = "https://localhost:8834"   # Change if Nessus is on another server
@@ -65,4 +65,4 @@ for scan in scans:
     with open(scan_name + ".csv", "wb") as f:
         f.write(download.content)
  
-print("✅ All CSV reports downloaded successfully!")
+print("All CSV reports downloaded successfully!")
