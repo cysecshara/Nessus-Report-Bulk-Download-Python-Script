@@ -5,11 +5,11 @@ import urllib3
  
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
  
-access_key = "fdfa1335951cfa30c166de25b494167b87ca33a4a8564bf4e87d0bc4a721034d"
-secret_key = "651962ac64a3202833f15d91eb1ee3b3680d37129b4bcb7cb66d7605f62c5a2d"
+access_key = "Generate from Nessus API Key"
+secret_key = "Generate from Nessus API Key"
 base_url = "https://localhost:8834"   # Change if Nessus is on another server
  
-TARGET_FOLDER = "DESKTOP"   # 🔴 CHANGE HERE
+TARGET_FOLDER = "DESKTOP"   # CHANGE HERE
  
 headers = {
     "X-ApiKeys": "accessKey=" + access_key + "; secretKey=" + secret_key
@@ -86,4 +86,4 @@ for scan in scans:
     with open(os.path.join(TARGET_FOLDER, scan_name + ".csv"), "wb") as f:
         f.write(download.content)
  
-print("✅ Selected folder export completed!")
+print("Selected folder export completed!")
