@@ -1,7 +1,7 @@
 # Nessus Scan Report Automation (Python)
 
 ## Author
-Shankar Ram
+cysecshara
 
 ## Overview
 
