@@ -5,14 +5,14 @@ import urllib3
  
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
  
-# 🔴 REPLACE KEYS
-access_key = "40621b8476269a7e24aafce4409dc5746b33fccefe379457d0f57f35621f4ea3"
-secret_key = "198acb8857b3d559bc1d6983899491e7851c0bf76c9357d66d2f0afc017a96c5"
+# REPLACE KEYS
+access_key = "Generate from Nessus API Key"
+secret_key = "Generate from Nessus API Key"
  
-# ✅ CORRECT BASE URL (IMPORTANT)
+# CORRECT BASE URL (IMPORTANT)
 base_url = "https://localhost:8834"
  
-# ✅ USE FOLDER IDs ONLY (NOT URLs)
+# USE FOLDER IDs ONLY (NOT URLs)
 TARGET_FOLDER_IDS = [38, 162, 39, 186, 187, 59, 120]
  
 headers = {
@@ -83,4 +83,4 @@ for scan in scans:
     with open(os.path.join(folder_name, scan_name + ".csv"), "wb") as f:
         f.write(download.content)
  
-print("✅ All selected folders exported successfully!")
+print("All selected folders exported successfully!")
